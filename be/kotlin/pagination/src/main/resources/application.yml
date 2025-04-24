@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: pagination
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: "jdbc:postgresql://localhost:50001/pagination"
+    username: page
+    password: 1234
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
