@@ -3,6 +3,7 @@ package example.bhyunnie.pagination.application.usecase
 import example.bhyunnie.pagination.application.port.`in`.GeneratePostInPort
 import example.bhyunnie.pagination.application.port.`in`.command.GeneratePostCommand
 import example.bhyunnie.pagination.application.port.out.GeneratePostOutPort
+import example.bhyunnie.pagination.domain.Post
 import org.springframework.stereotype.Service
 import kotlin.random.Random
 
@@ -12,7 +13,6 @@ class GeneratePostUsecase(
     private val generatePostOutPort: GeneratePostOutPort
 ): GeneratePostInPort {
     override fun generate(command: GeneratePostCommand) {
-        val startTime = System.currentTimeMillis()
         val sentences = arrayListOf<String>()
         repeat(command.count) {
             sentences.add(generateSentence())

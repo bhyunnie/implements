@@ -35,4 +35,19 @@ class Post(
             )
         }
     }
+
+    fun toEntity():PostEntity {
+        return PostEntity(
+            this.id,
+            this.uuid,
+            this.title,
+            this.author,
+            this.content,
+            this.category,
+            this.deleted,
+            this.createdAt,
+            this.modifiedAt,
+            this.deletedAt,
+        )
+    }
 }
