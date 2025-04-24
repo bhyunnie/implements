@@ -40,4 +40,8 @@ out/
 .kotlin
 
 ### idea 설정 제외 ###
-/.idea
+/.idea/
+
+### 프로메테우스, 그라파나 데이터 제외 ###
+/infrastructure/monit/grafana/data/
+/infrastructure/monit/prometheus/data/
