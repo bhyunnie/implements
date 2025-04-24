@@ -38,3 +38,6 @@ out/
 
 ### Kotlin ###
 .kotlin
+
+### idea 설정 제외 ###
+/.idea
